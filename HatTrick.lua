@@ -42,11 +42,3 @@ ccheck:SetToplevel(true)
 hcheck:SetChecked(ShowingHelm())
 ccheck:SetChecked(ShowingCloak())
 
-
-hooksecurefunc("ShowHelm", function(v)
-	hcheck:SetChecked(v)
-end)
-
-hooksecurefunc("ShowCloak", function(v)
-	ccheck:SetChecked(v)
-end)
