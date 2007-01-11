@@ -1,0 +1,8 @@
+## Interface: 20000
+
+## Title: Hat Trick
+## Notes: Simple cloak/helm checkboxes in the Character frame
+## Author: Tekkub Stoutwrithe
+## X-Credits: Based off Ani's Helm'n'Cloak toggle by Ani (aka Sirocco from Blackrock (EU))
+
+HatTrick.lua
