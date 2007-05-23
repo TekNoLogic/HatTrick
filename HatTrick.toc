@@ -1,4 +1,4 @@
-## Interface: 20003
+## Interface: 21000
 
 ## Title: Hat Trick
 ## Notes: Simple cloak/helm checkboxes in the Character frame
