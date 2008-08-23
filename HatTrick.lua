@@ -7,6 +7,16 @@ local L = {
 }
 
 
+-- I hate that I have to do this, but Blizz's option frame fucks up the setting unless it was set from their option frame
+local ShowCloak, ShowHelm, noop = ShowCloak, ShowHelm, function() end
+_G.ShowCloak, _G.ShowHelm = noop, noop
+
+for _,check in pairs{InterfaceOptionsDisplayPanelShowCloak, InterfaceOptionsDisplayPanelShowHelm} do
+	check:Disable()
+	check.Enable = noop
+end
+
+
 local hcheck = CreateFrame("CheckButton", "HelmCheckBox", PaperDollFrame, "OptionsCheckButtonTemplate")
 hcheck:ClearAllPoints()
 hcheck:SetWidth(22)
@@ -41,4 +51,3 @@ ccheck:SetToplevel(true)
 
 hcheck:SetChecked(ShowingHelm())
 ccheck:SetChecked(ShowingCloak())
-
