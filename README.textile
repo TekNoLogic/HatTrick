@@ -1,0 +1,9 @@
+HatTrick is a small addon that adds checkboxes in the player paperdoll frame to toggle the helm and cloak settings.
+
+Due to a nasty little bug in the default helm/clock config panel, HatTrick forcibly disables the default options' checkboxes and renders the global functions @ShowCloak@ and @ShowHelm@ inert.  I don't like being forced to do this, but it's the only option until they fix their little bug.
+
+h2. Links
+
+<b>Visit "my site":http://www.tekkub.net/addons/HatTrick for more info.<br>
+Please report all bugs and feature requests to my "Google Code":http://code.google.com/p/tekkub-wow/issues/list?can=1&q=addon:HatTrick&sort=status+milestone&colspec=ID%20Type%20Status%20Addon%20Milestone%20Summary tracker<br>
+Please direct all feedback and questions to my "Google Groups":http://groups-beta.google.com/group/tekkub-wow mailinglist.</b>
