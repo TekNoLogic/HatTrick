@@ -1,0 +1,2 @@
+3.0.1.1-Release
+    Override ShowCloak and ShowHelm, disable defaul UI's checkboxes... since they turn the helm/cloak back on when opened
