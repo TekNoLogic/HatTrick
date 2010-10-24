@@ -1,2 +1,6 @@
+4.0.0.2-Release
+    'this' is depreciated!
+    I guess Blizzy fixed this, finally
+
 3.0.1.1-Release
     Override ShowCloak and ShowHelm, disable defaul UI's checkboxes... since they turn the helm/cloak back on when opened
