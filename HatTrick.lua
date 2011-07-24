@@ -41,3 +41,8 @@ ccheck:SetToplevel(true)
 
 hcheck:SetChecked(ShowingHelm())
 ccheck:SetChecked(ShowingCloak())
+
+
+-- Honestly not sure why this fixes it on the initial load, but whatever
+hcheck:SetFrameLevel(31)
+ccheck:SetFrameLevel(31)
