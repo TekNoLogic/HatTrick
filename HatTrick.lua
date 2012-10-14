@@ -18,7 +18,6 @@ hcheck:SetScript("OnEnter", function(self)
 	GameTooltip:SetText(L.helmtip)
 end)
 hcheck:SetScript("OnLeave", function() GameTooltip:Hide() end)
-hcheck:SetScript("OnEvent", function() hcheck:SetChecked(ShowingHelm()) end)
 hcheck:RegisterEvent("UNIT_MODEL_CHANGED")
 hcheck:SetToplevel(true)
 
@@ -31,13 +30,16 @@ ccheck:SetScript("OnEnter", function(self)
 	GameTooltip:SetText(L.cloaktip)
 end)
 ccheck:SetScript("OnLeave", function() GameTooltip:Hide() end)
-ccheck:SetScript("OnEvent", function() ccheck:SetChecked(ShowingCloak()) end)
 ccheck:RegisterEvent("UNIT_MODEL_CHANGED")
 ccheck:SetToplevel(true)
 
 
-hcheck:SetChecked(ShowingHelm())
-ccheck:SetChecked(ShowingCloak())
+function ns.OnLoad()
+	hcheck:SetChecked(ShowingHelm())
+	ccheck:SetChecked(ShowingCloak())
+end)
+
+ns.RegisterEvent("UNIT_MODEL_CHANGED", ns.OnLoad)
 
 
 -- Honestly not sure why this fixes it on the initial load, but whatever
