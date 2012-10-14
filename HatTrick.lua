@@ -37,7 +37,7 @@ ccheck:SetToplevel(true)
 function ns.OnLoad()
 	hcheck:SetChecked(ShowingHelm())
 	ccheck:SetChecked(ShowingCloak())
-end)
+end
 
 ns.RegisterEvent("UNIT_MODEL_CHANGED", ns.OnLoad)
 
