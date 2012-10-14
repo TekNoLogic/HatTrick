@@ -7,4 +7,6 @@
 ## X-Credits: Based off Ani's Helm'n'Cloak toggle by Ani (aka Sirocco from Blackrock (EU))
 ## X-Icon: Interface\Icons\INV_Helmet_51
 
+externals\ui-check.lua
+
 HatTrick.lua
