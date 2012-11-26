@@ -2,11 +2,10 @@
 local myname, ns = ...
 
 
-local sounds = {
-	[true] = 'igMainMenuOptionCheckBoxOn',
-	[false] = 'igMainMenuOptionCheckBoxOff',
-}
-local function CheckSound(self) PlaySound(sounds[self:GetChecked()]) end
+local function CheckSound(self)
+	local sound = self:GetChecked() and 'On' or 'Off'
+	PlaySound('igMainMenuOptionCheckBox'.. sound)
+end
 
 
 -- Creates a checkbox.

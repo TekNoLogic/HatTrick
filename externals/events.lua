@@ -11,6 +11,11 @@ function ns.RegisterEvent(event, func)
 end
 
 
+function ns.UnregisterEvent(event)
+	frame:UnregisterEvent(event)
+end
+
+
 -- Handle special OnLoad code when our addon has loaded, if present
 -- If ns.ADDON_LOADED is defined, the ADDON_LOADED event is not unregistered
 local function ProcessOnLoad(arg1)
